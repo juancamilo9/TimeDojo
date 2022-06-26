@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Dojo Weather</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <h1>DojoWeather</h1>
+            <ul>
+                <li>
+                    <a href="#" onclick="mostrarAlerta(this)">Burbank</a>
+                </li>
+                <li>
+                    <a href="#" onclick="mostrarAlerta(this)">Chicago</a>
+                </li>
+                <li>
+                    <a href="#" onclick="mostrarAlerta(this)">Dallas</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <div class="san-jose">
+            <h2>San Jose</h2>
+            <form action="">
+                <label for="temperatura">Show temperature in: </label>
+                <select name="temperatura" id="temperatura" onchange="convertir()">
+                    <option value="C">°C</option>
+                    <option value="F">°F</option>
+                </select>
+            </form>
+        </div>
+        <div class="temperaturas">
+            <div class="carta-dia">
+                <h3>Today</h3>
+                <img src="assets/some_rain.png" alt="">
+                <p>some rain</p>
+                <div class="seccion-temperatura">
+                    <span for="" class="temperatura-maxima">24°</span>
+                    <span for="" class="temperatura-minima">18°</span>
+                </div>
+            </div>
+            <div class="carta-dia">
+                <h3>Tomorrow</h3>
+                <img src="assets/some_sun.png" alt="">
+                <p>some sun</p>
+                <div class="seccion-temperatura">
+                    <span for="" class="temperatura-maxima">27°</span>
+                    <span for="" class="temperatura-minima">19°</span>
+                </div>
+            </div>
+            <div class="carta-dia">
+                <h3>Friday</h3>
+                <img src="assets/some_clouds.png" alt="">
+                <p>some clouds</p>
+                <div class="seccion-temperatura">
+                    <span for="" class="temperatura-maxima">21°</span>
+                    <span for="" class="temperatura-minima">16°</span>
+                </div>
+            </div>
+            <div class="carta-dia">
+                <h3>Saturday</h3>
+                <img src="assets/some_sun.png" alt="">
+                <p>some sun</p>
+                <div class="seccion-temperatura">
+                    <span for="" class="temperatura-maxima">26°</span>
+                    <span for="" class="temperatura-minima">21°</span>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <div class="alerta-cookie">
+            <div class="logo-cookie">
+                <img src="assets/cookie.png" alt="">
+            </div>
+            <div>
+                <h3>Stop! Cookie time</h3>
+                <p>We use cookies (sadly not the edible ones) to personalize content and ads to provide social media features and to analyse our traffic <a href="#">Read more</a></p>    
+            </div>
+            <div>
+                <button class="btn-cookie" onclick="ocultarMensaje()">I accept</button>
+            </div>
+        </div>
+    </footer>
+    <script src="js/script.js"></script>
+</body>
+</html>
