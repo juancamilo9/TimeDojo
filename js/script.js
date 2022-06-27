@@ -1,7 +1,7 @@
 function mostrarAlerta(element) {
     var nombreCiudad = document.querySelector(".san-jose h2");
     var ciudad = element.textContent;
-    alert("Loading weather report..." + ciudad);
+    alert("Loading weather report... " + ciudad);
 
     nombreCiudad.innerText = ciudad;
 }
